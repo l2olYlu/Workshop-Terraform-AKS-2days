@@ -9,7 +9,7 @@ variable "azureRegion" {
 #  Resource Group Name
 variable "resourceGroupName" {
   type    = string
-  default = "RG-DemoGitHub"
+  default = "RG-RDNGitHub"
 }
 
 
@@ -28,6 +28,11 @@ variable "AzureClientID" {
 
 variable "AzureTenandID" {
   type = string
+}
+
+variable "tags" {
+  type    = string
+  default = "romuald.depin@exakis-nelite.com"
 }
 
 

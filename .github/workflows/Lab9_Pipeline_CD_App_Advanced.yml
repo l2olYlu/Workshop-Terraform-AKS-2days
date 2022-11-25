@@ -32,8 +32,8 @@ jobs:
             --ignore-test container-security-context-readonlyrootfilesystem \
             --ignore-test container-ephemeral-storage-request-equals-limit \
             --ignore-test container-ephemeral-storage-request-and-limit \
-            --ignore-test container-resources \
-            --ignore-test pod-probes 
+# --ignore-test container-resources \
+#            --ignore-test pod-probes 
 
       - name: Create issue
         if: ${{ failure() }} # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
